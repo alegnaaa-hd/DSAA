@@ -1,0 +1,67 @@
+// DSAA Week 1 Day 1, 7/15/2024
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*
+ * Goal: Lists (ArrayList)
+ * 1. List 5 things
+ * 2. Add 2 more things
+ * 3. Search for specific value 
+ */
+
+public class college 
+{
+    public static void main (String[] args)
+    {
+        String bar =  ("---------------------------------------------");
+        
+        // creates scanner
+
+        Scanner scan = new Scanner(System.in);
+
+        // creates list 
+        ArrayList<String> colleges = new ArrayList<String>();
+
+        // 1. 
+        colleges.add("MIT");
+        colleges.add("GT");
+        colleges.add("Cornell");
+        colleges.add("UPenn");
+        colleges.add("CMU");
+
+        // 2.
+        colleges.add("Northeastern");
+        colleges.add("Purdue");
+
+        // 3. 
+
+        System.out.println(bar);
+        System.out.println("Enter college to search for in ArrayList: ");
+        String userSearch = scan.nextLine();
+        System.out.println(bar);
+
+        int arraySize = colleges.size();
+        
+        boolean foundCollege; 
+
+        for (int i = 0; i < arraySize; i++)
+        {
+            if (userSearch == colleges.get(i))
+            {
+                foundCollege = true;
+            }
+
+            else 
+            {
+                foundCollege = false; 
+            }
+        }
+
+        if (foundCollege = true)
+        {
+            System.out.println(userSearch + " was found in the ArrayList");
+            System.out.println(bar);
+        }
+    }
+}
