@@ -43,13 +43,17 @@ public class college
 
         int arraySize = colleges.size();
         
-        boolean foundCollege; 
+        boolean foundCollege = false; 
+        String compareCollege = "";
 
+        
         for (int i = 0; i < arraySize; i++)
         {
-            if (userSearch == colleges.get(i))
+            compareCollege = colleges.get(i);
+            if (userSearch.equals(compareCollege))
             {
                 foundCollege = true;
+                i = 10;
             }
 
             else 
@@ -58,10 +62,29 @@ public class college
             }
         }
 
-        if (foundCollege = true)
+        
+        System.out.println(foundCollege);
+
+        if (foundCollege == false)
+        {
+            System.out.println(userSearch + " was not found in the ArrayList");
+        }
+
+        else if (foundCollege = true)
         {
             System.out.println(userSearch + " was found in the ArrayList");
-            System.out.println(bar);
         }
+
+        System.out.println(bar);
+
+        // + extra printing out step
+
+        System.out.println("ArrayList of Colleges: ");
+
+        for (int i = 0; i < arraySize; i++)
+        {
+            System.out.println(colleges.get(i));
+        }
+        System.out.println(bar);
     }
 }
