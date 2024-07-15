@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Goal: Objectives
  * 1. Create a List / Array
  * 2. Include at least 1 input
- * 3. nclude search
+ * 3. Include search
  * 4. Add error handling (w/ print statements)
  * 5. Save list to a .txt file 
  */
