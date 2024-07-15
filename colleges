@@ -46,7 +46,6 @@ public class college
         boolean foundCollege = false; 
         String compareCollege = "";
 
-        
         for (int i = 0; i < arraySize; i++)
         {
             compareCollege = colleges.get(i);
@@ -62,7 +61,6 @@ public class college
             }
         }
 
-        
         System.out.println(foundCollege);
 
         if (foundCollege == false)
