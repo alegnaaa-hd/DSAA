@@ -1,4 +1,4 @@
-// DSAA Week 1 Day 1, 7/15/2024
+// DSAA Week 1 Day 2, 7/15/2024
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -16,34 +16,35 @@ public class PlanetApp
 {
     public static void main (String[] args)
     {
+        // yeehaw
         String bar = "-----------------------------------------------------";
+        
         // create scanner
-
         Scanner scan = new Scanner(System.in);
 
         // create ArrayList
-
         ArrayList<String> planets = new ArrayList<String>();
         
         planets.add("Earth");
         planets.add("Mercury");
         planets.add("Venus");
 
+        // initializing variables 
         int menuFinish = 0; 
         int listSize = 0; 
-
-
         int planetRemove = 0;
-
         int planetID = 0;
         String changeNameTo = "";
 
+        System.out.println(bar);
+
+        /////////////////////////// MAIN PROGRAM ///////////////////////////
         while (menuFinish != 1)
         {
-            System.out.println(bar);
             menuOptions();
             System.out.println(bar);
 
+            // user input 
             System.out.println("Enter your choice: ");
             int userChoice = scan.nextInt();
             System.out.println(bar);
@@ -63,7 +64,7 @@ public class PlanetApp
             {
                 listSize = planets.size();
 
-                for (int i = 0; i < (listSize + 1); i++)
+                for (int i = 0; i < (listSize); i++)
                 {
                     System.out.println((i + 1) + ". " + planets.get(i));
                 }
@@ -80,7 +81,7 @@ public class PlanetApp
             else if (userChoice == 3)
             {
                 listSize = planets.size();
-                for (int i = 0; i < (listSize + 1); i++)
+                for (int i = 0; i < (listSize); i++)
                 {
                     System.out.println((i + 1) + ". " + planets.get(i));
                 }
@@ -89,7 +90,7 @@ public class PlanetApp
                 System.out.println("Enter ID of planet to change: ");
                 planetID = scan.nextInt();
                 System.out.println("Enter name to change TO: ");
-                changeNameTo = scan.nextLine();
+                changeNameTo = scan.next();
 
                 planets.set((planetID - 1), changeNameTo);
                 System.out.println(bar);
@@ -98,6 +99,8 @@ public class PlanetApp
             // choice 4: print the ArrayList
             else if (userChoice == 4)
             {
+                listSize = planets.size();
+                
                 for (int i = 0; i < (listSize); i++)
                 {
                     System.out.println((i + 1) + ". " + planets.get(i));
@@ -120,6 +123,12 @@ public class PlanetApp
                 System.out.println("Program has ended. byebye");
                 System.out.println(bar);
                 menuFinish = 1; 
+            }
+
+            // other
+            else
+            {
+                System.out.println("That is not a valid number");
             }
         }
     }
