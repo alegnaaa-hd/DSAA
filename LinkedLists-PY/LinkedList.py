@@ -46,7 +46,7 @@ class LinkedList:
         print(" NULL \n")
 
     # delete function 
-    def delete(self, content_delete):
+    def delete(self, content_to_delete):
 
         current_head = self.head
 
