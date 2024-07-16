@@ -35,7 +35,6 @@ class LinkedList:
             count += 1
         return count
 
-
     # display function 
     def display(self):
         currentNode = self.head
