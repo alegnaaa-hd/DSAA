@@ -8,7 +8,8 @@ End of session notes:
 Logout of: 
 - github
 - vs code
-- google
+- google (home and aiw272)
 - monkeytype
+- deltamath
 
 -->
