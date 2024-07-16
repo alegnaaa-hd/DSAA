@@ -10,7 +10,7 @@ import java.util.Scanner;
  * 3. Search for specific value 
  */
 
-public class college 
+public class colleges 
 {
     public static void main (String[] args)
     {
