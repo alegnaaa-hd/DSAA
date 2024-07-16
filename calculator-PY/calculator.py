@@ -1,3 +1,5 @@
+# DSAA Week 1 Day 3, 7/16/2024
+
 import math
 
 class Calculator:
@@ -47,6 +49,9 @@ class Calculator:
     def tangent (self):
         return math.tan(self.number)
 
+"""
+# specific demonstration with the exponents function 
+
 basic_calculator = Calculator()
 
 scientific_calculator = Calculator()
@@ -61,3 +66,4 @@ exp = scientific_calculator.exponent()
 # basic_calculator.number1 + basic_calculator.number2
 
 print("exp: ", exp)
+"""

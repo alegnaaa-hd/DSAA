@@ -1,3 +1,5 @@
+# DSAA Week 1 Day 3, 7/16/2024
+
 from LinkedList import LinkedList
 from Node import Node
 

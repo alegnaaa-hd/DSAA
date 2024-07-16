@@ -1,3 +1,4 @@
+# DSAA Week 1 Day 2, 7/16/2024
 
 class Node:
     
