@@ -9,13 +9,12 @@ class Bank:
     def __init__ (self):
         self.firstcard = None
         self.card_issuers = ["VISA", "DISCOVER", "MASTERCARD", "CAPITAL ONE BANK"]
-        
+
     def add_new_card(self, new_card):
         
         if self.firstcard == None:
             self.firstcard = new_card
             
-        
         else:
             temp_card = self.firstcard
             
@@ -79,7 +78,7 @@ class Bank:
     def display_all_cards(self):
         card = self.firstcard
         if self.firstcard == None:
-            print("Bank has no credit cards at the oment")
+            print("Bank has no credit cards at the moment")
             return
         
         while card != None:

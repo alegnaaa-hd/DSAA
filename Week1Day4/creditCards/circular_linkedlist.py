@@ -2,8 +2,10 @@
 
 from credit_card import CreditCard
 
-class DoubleLinkedCard(CreditCard):
+class CircularLinkedList(CreditCard):
     
     def __init__(self):
         super().__init__()
         self.previous = None
+
+        # unfinished 
