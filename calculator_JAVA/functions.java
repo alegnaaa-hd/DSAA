@@ -1,4 +1,4 @@
-// DSAA Week 1 Day 3, 7/16/2024
+// DSAA Week 1 Day 3-4, 7/16/2024
 
 package calculator_JAVA;
 
