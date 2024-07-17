@@ -1,0 +1,1 @@
+# no day 1 because day 1 computers didnt work
