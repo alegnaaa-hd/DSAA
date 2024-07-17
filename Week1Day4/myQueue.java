@@ -20,8 +20,6 @@ public class myQueue {
         deque_.add("8");
         deque_.add("9");
 
-        
-
         // create another queue
         Deque <String> queue2 = new ArrayDeque <String>();
 
@@ -44,7 +42,7 @@ public class myQueue {
 
         // print out initial queue
         System.out.println("Queue elements: " + deque_);
-        
+
         // print out flipped queue         
         System.out.println("Flipped queue elements: " + queue2);
     }

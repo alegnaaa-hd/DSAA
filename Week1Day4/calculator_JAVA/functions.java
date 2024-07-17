@@ -1,6 +1,6 @@
 // DSAA Week 1 Day 3-4, 7/16/2024
 
-package Week1Day4.calculator_JAVA;
+package calculator_JAVA;
 
 public class functions 
 {
