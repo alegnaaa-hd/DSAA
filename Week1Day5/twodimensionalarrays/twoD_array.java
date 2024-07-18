@@ -2,6 +2,8 @@
 
 // Objective: create and print a 2D array
 
+package twodimensionalarrays;
+
 public class twoD_array
 {
     public static void main (String[] args)

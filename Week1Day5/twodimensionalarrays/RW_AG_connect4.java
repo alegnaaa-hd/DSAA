@@ -2,6 +2,8 @@
 
 // Rachael and Alec's connect 4 game visualized 
 
+package twodimensionalarrays;
+
 public class RW_AG_connect4 
 {
     public static void main (String[] args)
