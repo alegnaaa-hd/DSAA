@@ -2,6 +2,8 @@
 CTY <br> 
 coming soon...
 
+# why are you here
+
 <!-- 
 End of session notes:
 
