@@ -1,6 +1,8 @@
 // DSAA Week 1 Day 5, 7/18/2024
 
-public class factorial {
+package recursion;
+
+public class recursion {
     public static void main(String[] args)
     {
         int result = sum(-5);
