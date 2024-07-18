@@ -21,7 +21,7 @@ def main():
     flowers.insert(Node("Marigold"))
     flowers.display() # should display all 10 flowers above
     """
-    # SONGS LIST
+
     """
     songs = LinkedList()
     songs.insert(Node("How to go"))
@@ -31,7 +31,8 @@ def main():
 
     songs.display
     """
-
+    
+    # songs list
     songs = LinkedList()
     user_choice = ""
     FINISHED = False

@@ -1,5 +1,6 @@
 # DSAA Week 1 Day 2, 7/15/2024
 
+# basic OOP python tutorial by Franklin
 class Animal:
 
     def __init__ (self, newName):

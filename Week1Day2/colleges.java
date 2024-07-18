@@ -48,6 +48,7 @@ public class colleges
         boolean foundCollege = false; 
         String compareCollege = "";
 
+        // see if college to search exists
         for (int i = 0; i < arraySize; i++)
         {
             compareCollege = colleges.get(i);
@@ -78,7 +79,6 @@ public class colleges
         System.out.println(bar);
 
         // + extra printing out step
-
         System.out.println("ArrayList of Colleges: ");
 
         for (int i = 0; i < arraySize; i++)
