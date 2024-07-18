@@ -1,5 +1,7 @@
 # DSAA Week 1 Day 3, 7/16/2024
 
+# scientific calculator for trig
+
 from functions import *
 
 (number1, number2)= get_two_Numbers()

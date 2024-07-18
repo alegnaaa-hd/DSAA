@@ -2,6 +2,9 @@
 
 import math
 
+# basically same idea as calculator.py
+# calculator with basic operations and basic trig
+
 # addition
 def add(number1: float, number2: float): 
     return (number1 + number2)

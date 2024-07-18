@@ -2,6 +2,9 @@
 
 import math
 
+# calculator with basic operations and basic trig
+# basically the same idea as functions.py
+
 class Calculator:
 
     def __init__(self):
