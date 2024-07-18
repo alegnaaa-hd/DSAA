@@ -2,6 +2,8 @@
 
 // calculate fibonacci sequence and store in array
 
+package fibonacci;
+
 public class fib_memoization 
 {
     public static void main (String[] args)

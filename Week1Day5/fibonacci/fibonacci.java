@@ -2,7 +2,7 @@
 
 // Objective: write a fibonacci sequence
 
-package recursion;
+package fibonacci;
 
 public class fibonacci 
 {
