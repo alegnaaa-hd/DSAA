@@ -15,7 +15,6 @@ public class myStack
 {
     public static void main(String[] args)
     {
-
         // create new stack
         Stack <Integer> stack = new Stack<>();
 
