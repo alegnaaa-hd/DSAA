@@ -1,4 +1,3 @@
-package Queues;
 // DSAA Week 1 Day 4, 7/17/2024
 
 /*
@@ -9,6 +8,9 @@ package Queues;
  */
 
 // import ArrayDeque and Deque 
+
+package Queues;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -45,9 +47,9 @@ public class myQueue {
         }
 
         // print out initial queue
-        System.out.println("Queue elements: " + deque_);
+        System.out.println("Original Queue Elements: " + deque_);
 
         // print out flipped queue         
-        System.out.println("Flipped queue elements: " + queue2);
+        System.out.println("Flipped Queue Elements: " + queue2);
     }
 }
