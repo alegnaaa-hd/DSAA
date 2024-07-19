@@ -1,4 +1,4 @@
-// DSAA Week 1 Day 5, 7/18/2024
+// DSAA Week 1 Day 5-6, 7/18/2024
 
 package connect4;
 
