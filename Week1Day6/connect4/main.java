@@ -6,16 +6,12 @@
 
 package connect4;
 
-import java.util.Scanner;
-
 public class main 
 {
     public static void main (String[] args)
     {
         
-        Scanner scan = new Scanner(System.in);
         String line = "-----------------------------";
-        String bar =  "      - - - - - - - - -";
         
         String [][] board = new String[7][7];
         
@@ -29,26 +25,41 @@ public class main
         }
 
         boolean win = false;
-        int player_num = 0;
         int player1_choice = 0;
         int player2_choice = 0;
 
         System.out.println(line);
-        while (win != true)
-        {
+        while (!win)
+        {   
             // player 1's turn
-            player_num = 1;
             functions.printGrid(board);
-            player1_choice = functions.player1_input();
+            player1_choice = functions.player1_input(board);
             functions.updateBoard(player1_choice, "X", board);
-            
+
+            // check for wins
+            win = functions.checkForWins(board);
+
+            // if player 1 wins
+            if (win == true)
+            {
+                functions.endGame("X", 1, board);
+                break;
+            }
+
             // player 2's turn 
-            player_num = 2;
             functions.printGrid(board);
-            player2_choice = functions.player2_input();
+            player2_choice = functions.player2_input(board);
             functions.updateBoard(player2_choice, "O", board);
+            
+            // check for wins
+            win = functions.checkForWins(board);
+
+            // if player 2 wins
+            if (win == true)
+            {
+                functions.endGame("O", 2, board);
+                break;
+            }
         }
     }
 }
-
-

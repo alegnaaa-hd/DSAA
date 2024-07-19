@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class functions
 {
-    ///////////////// COLORS /////////////////
+    ///////////////// COLORS  + SCANNER /////////////////
 
     // declare reset
     public static final String ANSI_RESET = "\u001B[0m";
@@ -16,6 +16,8 @@ public class functions
 
     // declare color: blue 
     public static final String ANSI_BLUE = "\u001B[32m";
+
+    Scanner scan = new Scanner(System.in);
     
     ///////////////// BOARD /////////////////
 
@@ -59,7 +61,7 @@ public class functions
     }
 
     // get first player's input 
-    static int player1_input()
+    static int player1_input(String arr[][])
     {
         Scanner scan = new Scanner(System.in);
         String line = "-----------------------------";
@@ -70,14 +72,26 @@ public class functions
 
         while (validChoice != true)
         {
+            // ask for user input 
             System.out.println("Player 1 (X) enter column (0-6): ");
             userChoice = scan.nextInt();
 
             // if valid input 
             if (userChoice < 7 || userChoice == 0)
             {
+                // check if column is full
+                if (arr[0][userChoice].equals("X") ||
+                    arr[0][userChoice].equals("O"))
+                {
+                    System.out.println("That column is full. Please try again.");
+                }
+
+                // if column is not full 
+                else 
+                {
+                    validChoice = true;
+                }
                 System.out.println(line);
-                validChoice = true;
             }
             
             // if input not valid 
@@ -93,7 +107,7 @@ public class functions
     }
 
     // get second player's input
-    static int player2_input()
+    static int player2_input(String arr[][])
     {
         Scanner scan = new Scanner(System.in);
         String line = "-----------------------------";
@@ -104,14 +118,26 @@ public class functions
 
         while (validChoice != true)
         {
+            // ask for user input 
             System.out.println("Player 2 (O) enter column (0-6): ");
             userChoice = scan.nextInt();
 
             // if valid input 
             if (userChoice < 7 || userChoice == 0)
             {
+                // check if column is full 
+                if (arr[0][userChoice].equals("X") ||
+                    arr[0][userChoice].equals("O"))
+                {
+                    System.out.println("That column is full. Please try again.");
+                }
+
+                // if column is not full
+                else 
+                {
+                    validChoice = true;
+                }
                 System.out.println(line);
-                validChoice = true;
             }
             
             // if input not valid 
@@ -122,7 +148,7 @@ public class functions
                 System.out.println(line);
             }   
         }
-        
+
         return userChoice;
     }
 
@@ -144,5 +170,110 @@ public class functions
             }
         }
         // HOLY SHIT THIS TOOK WAY TOO LONG
+    }
+
+    // check for wins 
+    static boolean checkForWins (String arr[][])
+    {
+        boolean win = false;
+
+        ////////// HORIZONTAL //////////
+        // loop through rows 
+        for (int r = 0; r < 7; r++)
+        {
+            // loop through columns 
+            for (int c = 0; c < 4; c++)
+            {
+                if (arr[r][c].equals("X") ||
+                    arr[r][c].equals("O"))
+                {
+                    if (arr[r][c].equals(arr[r][c+1]) &&
+                    arr[r][c].equals(arr[r][c+2]) &&
+                    arr[r][c].equals(arr[r][c+3]))
+                    {
+                        win = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        ////////// VERTICAL //////////
+        // loop through rows
+        for (int r = 0; r < 4; r++)
+        {
+            // loop through columns
+            for (int c = 0; c < 7; c++)
+            {
+                if (arr[r][c].equals("X") ||
+                    arr[r][c].equals("O"))
+                {
+                    if (arr[r][c].equals(arr[r+1][c]) &&
+                        arr[r][c].equals(arr[r+2][c]) &&
+                        arr[r][c].equals(arr[r+3][c]))
+                    {
+                        win = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        //////// DIAGONAL: TOP LEFT TO BOTTOM RIGHT ////////
+        // loop through rows
+        for (int r = 0; r < 4; r++)
+        {
+            // loop through columns
+            for (int c = 0; c < 4; c++)
+            {
+                if (arr[r][c].equals("X") || 
+                    arr[r][c].equals("O"))
+                {
+                    if (arr[r][c].equals(arr[r+1][c+1]) &&
+                        arr[r][c].equals(arr[r+2][c+2]) &&
+                        arr[r][c].equals(arr[r+3][c+3]))
+                    {
+                        win = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        //////// DIAGONAL: BOTTOM LEFT TO TOP RIGHT ////////
+        // loop through rows
+        for (int r = 6; r > 2; r--)
+        {
+            // loop through columns
+            for (int c = 0; c < 4; c++)
+            {
+                if (arr[r][c].equals("X") || 
+                    arr[r][c].equals("O"))
+                {
+                    if (arr[r][c].equals(arr[r-1][c+1]) &&
+                        arr[r][c].equals(arr[r-2][c+2]) &&
+                        arr[r][c].equals(arr[r-3][c+3]))
+                    {
+                        win = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        return win;
+    }
+
+    // end the game 
+    static void endGame (String playerSign, int playerNum, String arr[][])
+    {
+        String line = "-----------------------------";
+        
+        System.out.println("FINAL BOARD");
+        System.out.println(line);
+        printGrid(arr);
+        System.out.println("GAME OVER");
+        System.out.println("WINNER: PLAYER " + playerNum + " (" + playerSign + ")");
+        System.out.println(line);
     }
 }
