@@ -2,7 +2,8 @@
 CTY <br> 
 coming soon...
 
-# current project: connect 4
+# current project: none
+# previous project: connect 4
 
 ## also why are you here
 
