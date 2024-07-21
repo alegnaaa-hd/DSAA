@@ -1,6 +1,6 @@
 // DSAA Week 1 Day 5-6, 7/18/2024
 
-package connect4;
+package Week1.Week1Day6.connect4;
 
 import java.util.Scanner;
 

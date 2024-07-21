@@ -1,6 +1,6 @@
 // DSAA Week 1 Day 2, 7/15/2024
 
-package Week1Day2;
+package Week1.Week1Day2;
 
 import java.util.ArrayList;
 import java.util.Scanner;

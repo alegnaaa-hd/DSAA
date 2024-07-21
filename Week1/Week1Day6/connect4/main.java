@@ -4,7 +4,7 @@
  * Objective: make connect 4
  */
 
-package connect4;
+package Week1.Week1Day6.connect4;
 
 public class main 
 {
