@@ -21,4 +21,9 @@ Logout of:
 - go to settings to check for automatically fill passwords
 - google classroom
 
+
+"projects"
+- connect 4
+- binary search probably
+idk bruh
 -->
