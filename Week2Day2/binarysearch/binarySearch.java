@@ -9,7 +9,6 @@ package binarysearch;
  * counter for every comparison in the list
  * 
  * Sidenote: this program actually works!!
- * props to Grace (@Bobbimectiliton) for helping me
  */
 
 public class binarySearch
