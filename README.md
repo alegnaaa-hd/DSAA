@@ -19,5 +19,6 @@ Logout of:
 - code HS
 - shell shockers . io
 - go to settings to check for automatically fill passwords
+- google classroom
 
 -->
