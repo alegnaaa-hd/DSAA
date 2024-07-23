@@ -2,9 +2,9 @@
 CTY <br> 
 coming soon...
 
-# current project: selection sort, persistence of a number
-# next project: insertion sort
-# previous project: connect 4
+# current project: insertion sort
+# next project: -
+# previous project: selection sort
 
 i am braindead
 
@@ -28,5 +28,5 @@ Logout of:
 "projects"
 - connect 4
 - binary search probably
-idk bruh
+- selection sort
 -->
