@@ -10,7 +10,7 @@
 
 package SS_selectionsort;
 
-public class editedbroken_SS
+public class v2_selectionsort
 {
     public static void main (String[] args)
     {

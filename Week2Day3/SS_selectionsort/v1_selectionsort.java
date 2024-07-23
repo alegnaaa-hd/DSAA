@@ -9,7 +9,7 @@ package SS_selectionsort;
  * i am dumb
  */
 
-public class broken_SS
+public class v1_selectionsort
 {
     public static void main (String[] args)
     {
