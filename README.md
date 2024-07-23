@@ -2,8 +2,11 @@
 CTY <br> 
 coming soon...
 
-# current project: none
+# current project: selection sort, persistence of a number
+# next project: insertion sort
 # previous project: connect 4
+
+i am braindead
 
 ## also why are you here
 
