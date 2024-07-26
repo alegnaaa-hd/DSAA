@@ -6,6 +6,8 @@
  * attempt 2
 */
 
+package Week2Day6.mergesort;
+
 import java.util.ArrayList;
 
 public class ms_playground 
