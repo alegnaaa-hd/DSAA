@@ -2,9 +2,9 @@
 CTY <br> 
 coming soon...
 
-# current project: insertion sort
+# current project: quick sort
 # next project: -
-# previous project: selection sort
+# previous project: merge sort
 
 i am braindead
 
@@ -29,4 +29,7 @@ Logout of:
 - connect 4
 - binary search probably
 - selection sort
+- insertion sort
+- merge sort
+- quick sort (?)
 -->
