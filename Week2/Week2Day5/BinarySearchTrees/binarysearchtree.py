@@ -51,9 +51,6 @@ class BST:
 
                 else:
                     temp_node = temp_node.right
-                
-
-
 
     def insert(self, node, new_key):
 
@@ -66,4 +63,4 @@ class BST:
                 node.left = self.insert(node.left, new_key)
             elif new_key > node.key:
                 node.right = self.insert(node.right, new_key)
-        
+    
