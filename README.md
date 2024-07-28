@@ -2,9 +2,9 @@
 CTY <br> 
 coming soon...
 
-# current project: quick sort
-# next project: -
-# previous project: merge sort
+# current project: -
+# next project: tetris??
+# previous project: -
 
 i am braindead
 
@@ -14,7 +14,7 @@ i am braindead
 End of session notes:
 
 Logout of: 
-- github
+- github 
 - vs code
 - google (home and aiw272)
 - monkeytype
@@ -31,5 +31,6 @@ Logout of:
 - selection sort
 - insertion sort
 - merge sort
-- quick sort (?)
+- quick sort
+- final project: tetris??
 -->
