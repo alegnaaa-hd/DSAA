@@ -14,7 +14,7 @@ i am braindead
 End of session notes:
 
 Logout of: 
-- github
+- github 
 - vs code
 - google (home and aiw272)
 - monkeytype
