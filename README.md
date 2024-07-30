@@ -19,10 +19,13 @@ Logout of:
 - google (home and aiw272)
 - monkeytype
 - deltamath
-- code HS
+- code HS (done)
 - shell shockers . io
 - go to settings to check for automatically fill passwords
 - google classroom
+- replit
+- canva
+- youtube (should automatically logout when google is logged out i think)
 
 
 "projects"
@@ -32,5 +35,5 @@ Logout of:
 - insertion sort
 - merge sort
 - quick sort
-- final project: tetris??
+- final project: tetris
 -->
