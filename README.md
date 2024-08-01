@@ -3,8 +3,8 @@ CTY <br>
 coming soon...
 
 # current project: -
-# next project: tetris??
-# previous project: -
+# next project: -
+# previous project: tetris
 
 i am braindead
 
