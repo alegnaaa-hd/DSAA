@@ -1,11 +1,7 @@
 # Data Structures And Algorithms (DSAA/DATA) 
 CTY <br> 
-august 2
-coming soon...
-
-# current project: -
-# next project: -
-# previous project: tetris
+august 2 <br>
+coming soon... <br>
 
 i am braindead
 
@@ -16,16 +12,8 @@ End of session notes:
 
 Logout of: 
 - github 
-- vs code
-- google (home and aiw272)
-- monkeytype
-- deltamath
-- code HS (done)
-- shell shockers . io
-- go to settings to check for automatically fill passwords
+- google ( and aiw272)
 - google classroom
-- replit
-- canva
 - youtube (should automatically logout when google is logged out i think)
 
 
