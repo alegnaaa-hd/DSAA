@@ -1,7 +1,6 @@
 # Data Structures And Algorithms (DSAA/DATA) 
-CTY <br> 
-august 2 <br>
-coming soon... <br>
+CTY Carlisle 24.2 @ Dickinson College<br> 
+July 14th - August 2nd, 2024 <br>
 
 i am braindead
 
@@ -9,13 +8,6 @@ i am braindead
 
 <!-- 
 End of session notes:
-
-Logout of: 
-- github 
-- google ( and aiw272)
-- google classroom
-- youtube (should automatically logout when google is logged out i think)
-
 
 "projects"
 - connect 4
